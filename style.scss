@@ -2,7 +2,7 @@
     margin-top: 10vh;
 
     > :first-child {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -12,19 +12,26 @@
     max-width: 960px;
 }
 
-.modal-button {
-    margin-top: 3vh;
-    max-width: 80px;
+button {
+    &.modal-button {
+        margin-top: 3vh;
+        width: 80px;
+    }
+
+    &#status-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 30px;
+    }
 }
 
-button.add {
-    width: 80px;
+#github {
+    height: 1.5rem;
+    width: auto;
 }
 
-#status-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 30px;
+footer {
+    height: 3.5rem;
 }

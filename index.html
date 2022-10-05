@@ -14,63 +14,70 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-  <div class="master container">
+  
 
-    <div class="row">
-      <div class="container display-4">Book Collection</div>
-    </div>
-
-    <div class="row ">
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Title</th>
-            <th scope="col">Author</th>
-            <th scope="col">Pages</th>
-            <th scope="col">Finished</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="align-middle">Test</td>
-            <td class="align-middle">Test</td>
-            <td class="align-middle">Test</td>   
-            <td class="align-middle">
-              <button id="status-button" class="btn btn-outline-secondary text-center status">NO</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="row d-flex justify-content-center">
-      <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#myModal">
-        Add
-        </button>
-      
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="myModalLabel">Add new position</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          space for inputs
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary add">Add</button>
-        </div>
+    <div class="container master">
+      <div class="row">
+        <div class="container display-5">Book Collection</div>
       </div>
+      <div class="row ">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+              <th scope="col">Pages</th>
+              <th scope="col">Finished</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="align-middle">Test</td>
+              <td class="align-middle">Test</td>
+              <td class="align-middle">Test</td>
+              <td class="align-middle">
+                <button id="status-button" class="btn btn-outline-secondary text-center status">NO</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#myModal">
+          Add
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">Add new position</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            space for inputs
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary add">Add</button>
+          </div>
         </div>
-        </div>
+          </div>
+          </div>
+      </div>
     </div>
     
+    <div class="footer-wrapper row mt-auto">
+      <footer class="d-flex justify-content-center align-items-center">
+        Copyright © 2022 Maciej Rzadzinski&nbsp&nbsp;
+        <a href="https://github.com/mRzadzinski/library">
+            <img id="github" src="./img/github.png" alt="github">
+      </footer>
+    </div>
 
 
 
