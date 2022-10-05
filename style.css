@@ -1,0 +1,29 @@
+.master {
+  margin-top: 10vh;
+}
+.master > :first-child {
+  margin-bottom: 2rem;
+}
+
+.row {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
+
+.modal-button {
+  margin-top: 3vh;
+  max-width: 80px;
+}
+
+button.add {
+  width: 80px;
+}
+
+#status-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */
