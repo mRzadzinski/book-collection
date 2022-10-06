@@ -26,6 +26,7 @@
         <table class="table table-hover">
           <thead>
             <tr>
+              <th scope="col">#</th>
               <th scope="col">Title</th>
               <th scope="col">Author</th>
               <th scope="col">Pages</th>
@@ -34,15 +35,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="align-middle">Lord of the Rings</td>
-              <td class="align-middle">J. R. R. Tolkien</td>
-              <td class="align-middle">1178</td>
-              <td class="align-middle">
-                <button id="status-button" class="btn btn-outline-secondary text-center">no</button>
+            <tr id="row-template" class="hide-element">
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle"></td>
+              <td class="align-middle status-button-container">
+                <button id="status-button" class="btn btn-outline-secondary text-center"></button>
               </td>
               <td class="align-middle">
-                <button id="remove-button" class="btn btn-outline-danger text-center">remove</button>
+                <button id="remove-button" class="btn btn-outline-danger text-center">REMOVE</button>
               </td>
             </tr>
           </tbody>
@@ -60,22 +62,22 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="myModalLabel">Add new book</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             
-            <form>
+            <form id="add-form">
               <div class="mb-3">
                 <label for="title-input" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title-input" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="title-input" aria-describedby="emailHelp" required>
               </div>
               <div class="mb-3">
                 <label for="author-input" class="form-label">Author</label>
-                <input type="text" class="form-control" id="author-input">
+                <input type="text" class="form-control" id="author-input" required>
               </div>
               <div class="mb-3">
                 <label for="pages-input" class="form-label">Pages</label>
-                <input type="number" class="form-control" id="pages-input" min="1">
+                <input type="number" class="form-control" id="pages-input" min="1" required>
               </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -86,7 +88,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary add">Add</button>
+            <button type="submit" class="btn btn-primary add" form="add-form">Add</button>
           </div>
         </div>
           </div>

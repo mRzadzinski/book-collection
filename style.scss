@@ -14,24 +14,25 @@
 
 button {
     &.modal-button {
-        margin-top: 3vh;
+        margin-top: 2.5rem;
         width: 80px;
     }
 
-    &#status-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 65px;
-        height: 30px;
-    }
-
+    &#status-button,
     &#remove-button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
         height: 30px;
+        font-size: .75rem;
+    }
+
+    &#status-button {
+        width: 4rem;
+    }
+
+    &#remove-button {
+        width: 5rem;
     }    
 }
 
@@ -42,4 +43,8 @@ button {
 
 footer {
     height: 3.5rem;
+}
+
+.hide-element {
+    display: none;
 }
