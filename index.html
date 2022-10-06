@@ -30,15 +30,19 @@
               <th scope="col">Author</th>
               <th scope="col">Pages</th>
               <th scope="col">Finished</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="align-middle">Test</td>
-              <td class="align-middle">Test</td>
-              <td class="align-middle">Test</td>
+              <td class="align-middle">Lord of the Rings</td>
+              <td class="align-middle">J. R. R. Tolkien</td>
+              <td class="align-middle">1178</td>
               <td class="align-middle">
-                <button id="status-button" class="btn btn-outline-secondary text-center status">NO</button>
+                <button id="status-button" class="btn btn-outline-secondary text-center">no</button>
+              </td>
+              <td class="align-middle">
+                <button id="remove-button" class="btn btn-outline-danger text-center">remove</button>
               </td>
             </tr>
           </tbody>
@@ -55,11 +59,30 @@
           <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="myModalLabel">Add new position</h5>
+            <h5 class="modal-title" id="myModalLabel">Add new book</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            space for inputs
+            
+            <form>
+              <div class="mb-3">
+                <label for="title-input" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title-input" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="author-input" class="form-label">Author</label>
+                <input type="text" class="form-control" id="author-input">
+              </div>
+              <div class="mb-3">
+                <label for="pages-input" class="form-label">Pages</label>
+                <input type="number" class="form-control" id="pages-input" min="1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Have you already read it?</label>
+              </div>
+            </form>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

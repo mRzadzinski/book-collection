@@ -19,7 +19,14 @@ button#status-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
+  width: 65px;
+  height: 30px;
+}
+button#remove-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
   height: 30px;
 }
 

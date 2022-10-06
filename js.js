@@ -10,3 +10,4 @@ function Book(title, author, pages, read) {
 
 let lotr = new Book('Lord of the Rings', 'Tolkien', 370, 'read');
 
+const myModal = document.getElementById('myModal');
