@@ -6,9 +6,6 @@ function Book(title, author, pages, finished) {
     this.author = author
     this.pages = pages
     this.finished = finished
-    this.info = function() {
-        return `${title}, ${author}, ${pages} pages, ${finished}`
-    }
 }
 
 function addBookToCollection(book) {
@@ -19,6 +16,7 @@ function removeBookFromCollection(bookIndex) {
     bookCollection.splice(bookIndex, 1);
 }
 
+// Adding several predefined positions
 let dontMakeMeThink = new Book('Don\'t Make Me Think', 'Steve Krug', 216, 'NO');
 let holdMeTight = new Book('Hold Me Tight', 'Sue Johnson', 320, 'YES');
 let meditations = new Book('Meditations', 'Marcus Aurelius', 88, 'NO');
@@ -53,9 +51,9 @@ function displayCollection(collection) {
         // Create new row for each book
         let newClone = clone.cloneNode(true);
         tableBody.appendChild(newClone);
-        let row = tableBody.lastChild.querySelectorAll('.align-middle');
+        let row = tableBody.lastChild.children;
         
-        // Iterate through rows and add book data
+        // Iterate through columns and add book data
         for (let i = 0; i < row.length - 1; i++) {
             if (i === 0) {
                 counter++;
@@ -76,7 +74,7 @@ function displayCollection(collection) {
 
 setButtonsListeners();
 function setButtonsListeners() {
-    // Status YES/NO buttons
+    // Status buttons
     let statusButtons = document.querySelectorAll('#status-button');
     statusButtons.forEach(button => button.addEventListener('click', () => {
         if (button.innerHTML === 'NO') {
@@ -90,7 +88,7 @@ function setButtonsListeners() {
         }
     }));
 
-    //Remove position buttons
+    //'Remove book' buttons
     let removeButtons = document.querySelectorAll('#remove-button');
     removeButtons.forEach(button => button.addEventListener('click', () => {
     // Find index of book to remove
@@ -107,7 +105,7 @@ function setButtonsListeners() {
 let titleInput = document.querySelector('#title-input');
 let authorInput = document.querySelector('#author-input');
 let pagesInput = document.querySelector('#pages-input');
-let finishedCheck = document.querySelector('#finished-check');
+let finishedCheckbox = document.querySelector('#finished-check');
 let modalAddButton = document.querySelector('#modal-add-button');
 let form = document.querySelector('form');
 let submitButton = document.querySelector('#submit-button');
@@ -120,7 +118,7 @@ modalAddButton.onclick = (e) => {
     
     } else if (titleInput.value && authorInput.value && pagesInput.value) {
         let finishedStatus;
-        if (finishedCheck.checked === true) {
+        if (finishedCheckbox.checked === true) {
             finishedStatus = 'YES';
         } else {
             finishedStatus = 'NO';

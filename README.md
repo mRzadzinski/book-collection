@@ -6,7 +6,7 @@
 
 Simple web app to create your book collection
 
-(Several predefined options to play with are provided)
+(Several predefined examples to play with are provided)
 
 (There is no data storage for long term use)
 

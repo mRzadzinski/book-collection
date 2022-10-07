@@ -16,13 +16,13 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-  
-
     <div class="container master">
       <div class="row">
         <div class="container display-5">Book Collection</div>
       </div>
+
       <div class="row">
+        <!------------------------------- Table ------------------------------->
         <table class="table table-hover">
           <thead>
             <tr>
@@ -49,14 +49,16 @@
             </tr>
           </tbody>
         </table>
+        <!------------------------------- /Table ------------------------------->
       </div>
+
       <div class="row d-flex justify-content-center">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#myModal">
         Add
         </button>
       
-        <!-- Modal -->
+        <!------------------------------- Modal ------------------------------->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -66,6 +68,7 @@
               </div>
               <div class="modal-body">
 
+                <!------------------------------- Form ------------------------------->
                 <form id="myForm">
                   <div class="mb-3">
                     <label for="title-input" class="form-label">Title</label>
@@ -84,6 +87,7 @@
                     <label class="form-check-label" for="finished-check">Have you already read it?</label>
                   </div>
                 </form>
+                <!------------------------------- /Form ------------------------------->
 
               </div>
               <div class="modal-footer">
@@ -94,6 +98,7 @@
             </div>
           </div>
         </div>
+        <!------------------------------- /Modal ------------------------------->
       </div>
     </div>
     
@@ -104,8 +109,6 @@
             <img id="github" src="./img/github.png" alt="github">
       </footer>
     </div>
-
-
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
