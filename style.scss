@@ -36,15 +36,20 @@ button {
     }    
 }
 
-#github {
-    height: 1.5rem;
-    width: auto;
-}
-
 footer {
     height: 3.5rem;
 }
 
 .hide-element {
     display: none;
+}
+
+#github {
+    height: 1.8rem;
+    width: auto;
+    transition: 0.3s;
+}
+
+#github:hover {
+    transform: scale(1.1);
 }
