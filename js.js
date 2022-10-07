@@ -131,6 +131,7 @@ modalAddButton.onclick = (e) => {
         renewBookCollection();
         setButtonsListeners();
 
+        form.reset();
         $('#myModal').modal('hide')
     }
 
