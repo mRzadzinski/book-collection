@@ -134,5 +134,4 @@ modalAddButton.onclick = (e) => {
         form.reset();
         $('#myModal').modal('hide')
     }
-
 };
