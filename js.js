@@ -1,11 +1,13 @@
 const bookCollection = [];
 let counter = 0;
 
-function Book(title, author, pages, finished) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.finished = finished
+class Book {
+    constructor(title, author, pages, finished) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.finished = finished
+    }
 }
 
 function addBookToCollection(book) {
